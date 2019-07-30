@@ -8,7 +8,7 @@ This package is a library containing some useful string-related functions. See t
 When using this package, import a specific version of the package, because the master branch is not
 guaranteed to be always backward compatible with older versions of the package.
 
-A specific version may be imported via tools like [godoc.in](http://labix.org/gopkg.in).
+A specific version may be imported via tools like [gopkg.in](http://labix.org/gopkg.in).
 
 #### Examples
 
