@@ -12,9 +12,11 @@ import (
 // difficult to precisely predict what a string generated at anytime (by this function) would be).
 //
 // INPUTS
+//
 // input 0: The length of the string to be generated. Value can not be less than 24.
 //
 // OUTPTS
+//
 // outpt 0: If generation succeeds, value would be the generated string. If generation should fail,
 // value could be anything. Use outpt 1 to determine success or failure.
 //
@@ -23,6 +25,7 @@ import (
 // value would be error str.UPSErrTooSmall.
 //
 // CURRENT IMPLEMENTATION INFO
+//
 // This function relies on your system's local time (golang's package "time"). If your system should
 // go back in time, all strings generated till your system goes back to the present, may be unique,
 // but not guaranteed to be unique.
@@ -68,7 +71,7 @@ func UniquePredsafeStr (length int) (newStr string, err error) { /* This functio
                 // ... }
 
                 // Adding of the months part { ...
-                month := MonthToInt (currentTime.Month ().String ())
+                month := MonthToNum (currentTime.Month ().String ())
                 monthString := PrependTillN (strconv.Itoa (month), "0", 2)
                 newStr += monthString
                 // ... }

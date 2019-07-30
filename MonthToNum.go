@@ -1,14 +1,16 @@
 package str
 
-// MonthToInt () returns the numerical value of a month.
+// MonthToNum () returns the numerical value of a month.
 //
 // INPUTS
+//
 // input 0: The full name of the month (capitalizing only the first letter of the month name, e.g.
 // April).
 //
 // OUTPTS
+//
 // outpt 0: The numerical value of the month. If input 0 is invalid, value would be 0.
-func MonthToInt (month string) (int) {
+func MonthToNum (month string) (int) {
         switch month {
                 case "January":   return 1
                 case "February":  return 2
