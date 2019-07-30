@@ -8,18 +8,18 @@ import (
         "time"
 )
 
-// This function generates a string that is unique, and also safe from prediction (i.e. it is
-// difficult to precisely predict what a string generated at anytime would be).
+// UniquePredsafeStr () generates a string that is unique, and also safe from prediction (i.e. it is
+// difficult to precisely predict what a string generated at anytime (by this function) would be).
 //
 // INPUTS
-// input 1: The length of the string to be generated. Value can not be less than 24.
+// input 0: The length of the string to be generated. Value can not be less than 24.
 //
 // OUTPTS
-// outpt 1: If generation succeeds, value would be the generated string. If generation should fail,
-// value could be anything. Use outpt 2 to determine success or failure.
+// outpt 0: If generation succeeds, value would be the generated string. If generation should fail,
+// value could be anything. Use outpt 1 to determine success or failure.
 //
-// outpt 2: If generation succeeds, value would be a nil error. If generation should fail, value
-// would be an error describing the reason for the failure. If value of input 1 is less than 24,
+// outpt 1: If generation succeeds, value would be a nil error. If generation should fail, value
+// would be an error describing the reason for the failure. If value of input 0 is less than 24,
 // value would be error str.UPSErrTooSmall.
 //
 // CURRENT IMPLEMENTATION INFO
@@ -30,12 +30,12 @@ import (
 // In short, for this function to generate unique strings, at all time (till the end of the year
 // 9999), your system's time must be accurate at all time.
 //
-// This function builds upon golang's package "crypto/rand", so its predictability-safeness is
+// This function builds upon golang's package "crypto/rand", so its prediction-safeness is
 // dependent on the package.
 func UniquePredsafeStr (length int) (newStr string, err error) { /* This function uses the current
 	local time and random numbers, to generated the strings it generates. Time helps ensure the
 	strings generated are unique, while random numbers help ensure the strings are
-	predictability-safe. */
+	prediction-safe. */
 
 	// Error handling, due to input string length being less than 24
 	if length < 24 {
@@ -85,7 +85,7 @@ func UniquePredsafeStr (length int) (newStr string, err error) { /* This functio
 		return newStr, upsErrBuggy
 	}
 
-        // This part generates the predicitability-safe part of the string. { ...
+        // This part generates the prediction-safe part of the string. { ...
         safeBytes := make ([]byte, length - 19)
         _, err1 := rand.Read (safeBytes)
         if err1 != nil {
