@@ -26,6 +26,6 @@ import "gopkg.in/qamarian-lib/str.v2.4"
 
 ### Versions
 
-_See the [gopkg.in](https://gopkg.in/qamarian-lib/str.v1) page of this package, to check its
+_See the [gopkg.in](https://gopkg.in/qamarian-lib/str.v0) page of this package, to check its
 versions._
 
