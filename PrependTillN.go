@@ -1,6 +1,6 @@
 package str
 
-// PrependTillN repeatedly prepends a prepend, to a subject, until the length of the subject is at
+// PrependTillN () repeatedly prepends a prepend to a subject, until the length of the subject is at
 // least N chars in size.
 //
 // INPUTS
