@@ -21,6 +21,7 @@ package str
 // you can do this:
 //
 // text = str.PrependTillN (text, "hi!", 500000000)
+//
 // text = str.PrependTillN (text, "hi!", 500000000)
 //
 // Outpts

@@ -9,7 +9,7 @@ import (
 )
 
 // UniquePredsafeStr () generates a string that is unique, and also safe from prediction (i.e. it is
-// difficult to precisely predict what a string generated at anytime (by this function) would be).
+// difficult to precisely predict what a string generated, by this function, at anytime would be).
 //
 // Inputs
 //
@@ -32,7 +32,7 @@ import (
 // but not guaranteed to be unique.
 //
 // In short, for this function to generate unique strings, at all time (till the end of the year
-// 9999), your system's time must be accurate at all time.
+// 9999), your system's time must be accurate at all times you call this function.
 //
 // This function builds upon golang's package "crypto/rand", so its prediction-safeness is
 // dependent on the package.
