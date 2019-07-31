@@ -1,7 +1,7 @@
 # str: String Library
 
-This package is a library containing some useful string-related functions. See the usage doc on
-[godoc.org](https://godoc.org/github.com/qamarian-lib/str).
+This repository/package is a Golang library containing some useful string-related functions. See its
+usage doc on [godoc.org](https://godoc.org/github.com/qamarian-lib/str).
 
 ### Warning!
 
