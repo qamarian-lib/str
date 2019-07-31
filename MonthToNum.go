@@ -2,12 +2,12 @@ package str
 
 // MonthToNum () returns the numerical value of a month.
 //
-// INPUTS
+// Inputs
 //
 // input 0: The full name of the month (capitalizing only the first letter of the month name, e.g.
 // April).
 //
-// OUTPTS
+// Outpts
 //
 // outpt 0: The numerical value of the month. If input 0 is invalid, value would be 0.
 func MonthToNum (month string) (int) {
