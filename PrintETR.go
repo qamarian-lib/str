@@ -5,6 +5,18 @@ import (
 	"gopkg.in/mgutz/ansi.v0"
 )
 
+// PrintETR () which stands for "print easier-to-read text", helps print texts that
+// would be easier to read.
+//
+// Input
+//
+// input 0: The text to the be printed.
+//
+// input 1: The type of text input 0 is. Possible values are: "std" which represents a
+// normal text, "wrn" which represents a warning text, and "err" which represents an
+// error text. If value of input 0 is not valid, "std" would be used.
+//
+// input 2: The name or ID of the printer of the text.
 func PrintETR (output, oType, printer string) {
 	if oType != "err" && oType != "wrn" {
 		oType = "std"
