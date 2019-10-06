@@ -6,10 +6,13 @@ import (
 )
 
 func TestPrintEtr (t *testing.T) {
-	fmt.Println ("Testing function PrintEtr ()...")
-	PrintEtr (1,              "std", "some")
-	PrintEtr ("2",            "wrn", "tome")
-	PrintEtr (&[]string{"3"}, "err", "uome")
-	PrintEtr (true,           "foo", "vome")
-	fmt.Println ("End of test!")
+	fmt.Print ("Testing function PrintEtr ()...\n\n\n")
+
+	PrintEtr ("0 - ground",   "nte", "note")
+	PrintEtr (1,              "std", "stnd")
+	PrintEtr ("2",            "wrn", "warn")
+	PrintEtr (&[]string{"3"}, "err", "err!")
+	PrintEtr (true,           "foo", "invl")
+
+	fmt.Println ("\n\nEnd of test!")
 }
