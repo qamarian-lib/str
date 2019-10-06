@@ -1,3 +1,2 @@
-// This package is a library containing some useful string-related fucntions.
-//
+// Package str contains some useful string-related functions.
 package str
